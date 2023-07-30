@@ -3,17 +3,25 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <parameter name="ETO" value="7"/>
-    <parameter name="ito" value="9"/>
+    <parameter name="ITO" value="9"/>
     <parameter name="browser" value="chrome"/>
-    <parameter name="appURL" value="https://www.fb.com"/>
+    <parameter name="appURL" value="https://demo.actitime.com"/>
     <classes>
       <class name="Script.Test2">
         <methods>
           <include name="postCondition"/>
-          <include name="test2"/>
+          <include name="test1"/>
           <include name="preCondition"/>
         </methods>
       </class> <!-- Script.Test2 -->
+      <class name="Script.Test1">
+        <methods>
+          <include name="postCondition"/>
+          <include name="test1"/>
+          <include name="test2"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- Script.Test1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
