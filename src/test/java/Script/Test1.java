@@ -20,6 +20,17 @@ public class Test1 extends BaseTest {
 		 
 		
 	}
+	@Test
+	public void test2()
+	{
+		
+		Reporter.log("hi",true);
+		
+		
+		 
+		
+	}
+	
 	
 
 }
