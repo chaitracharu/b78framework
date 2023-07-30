@@ -18,7 +18,7 @@ public class ValidLogin extends BaseTest {
 		
 		
 	  //     1.enter valid un
-	  LoginPage loginPage = new LoginPage(driver);
+	          LoginPage loginPage = new LoginPage(driver);
 			  loginPage.setUsername(un);
 			  
 			  

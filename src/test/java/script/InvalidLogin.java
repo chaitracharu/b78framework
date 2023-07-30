@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import generic.BaseTest;
 import generic.Excel;
+import page.EnterTimeTrackPage;
 import page.LoginPage;
 
 public class InvalidLogin extends BaseTest {
@@ -13,6 +14,7 @@ public class InvalidLogin extends BaseTest {
 	{
 		String un = Excel.getCellData(XL_PATH, "InvalidLogin", 1, 0);
 		String pw = Excel.getCellData(XL_PATH, "InvalidLogin", 1, 1);
+		
 	// 1.enter invalid username
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.setUsername(un);
@@ -24,6 +26,7 @@ public class InvalidLogin extends BaseTest {
 		loginPage.clickLoginButton();
 		
     // 4.err msg should be displayed
+		
 		boolean result = loginPage.verifyErrMsgIsDisplayed(wait);
 		Assert.assertTrue(result);
 	}

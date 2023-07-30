@@ -6,7 +6,7 @@
 			  <parameter name="ETO" value="7"/>
 	 
     <packages>
-      <package name="Script"/>
+      <package name="script"/>
     </packages>
    </test> 
  </suite> 
